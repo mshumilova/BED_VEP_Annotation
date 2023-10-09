@@ -17,8 +17,6 @@ homo_sapiens = 'homo_sapiens'
 data = 'data'
 inp = 'inp_vcf'
 annotated_vcf = 'annotated_vcf'
-#out = 'out_csv'
-#compound = 'compound'
 
 ref = 'ref'
 
@@ -34,8 +32,6 @@ clinvar_dir = os.path.join(plugins_dir, clinvar)
 data_dir = os.path.join(parent_dir, data)
 inp_dir = os.path.join(data_dir, inp)
 annotated_vcf_dir = os.path.join(data_dir, annotated_vcf)
-#out_dir = os.path.join(data_dir, out)
-#out_compound_path = os.path.join(data_dir, compound)
 
 ref_dir = os.path.join(parent_dir, ref)
 
