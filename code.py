@@ -59,7 +59,7 @@ delimiter = '\t'
 def docker_pull():
     cmd1 = 'docker pull dukegcb/bwa-samtools:latest'
     cmd2 = 'docker pull broadinstitute/gatk'
-    cmd3 = 'docker pull ensemblorg/ensembl-vep:110'
+    cmd3 = 'docker pull ensemblorg/ensembl-vep' #:110
     print(cmd1)
     os.system(cmd1)
     print(cmd2)
@@ -201,7 +201,7 @@ def bed_to_vcf():
         elif file_extension.startswith('.bed'): # convert .bed to .vcf and save to working directory
             input_file = os.path.splitext(file_path)[0]
             vcf_file = os.path.join(inp_dir, os.path.basename(file_path).split('.')[0])
-            cmd = f"sudo {plink_directory}plink \
+            cmd = f"sudo {plink_directory}/plink \
                     --bfile {input_file} \
                     --recode vcf \
                     --out {vcf_file}"
