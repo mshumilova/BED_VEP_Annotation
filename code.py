@@ -85,8 +85,6 @@ def folders_creating():
     create_directory_if_not_exists(data_dir)
     create_directory_if_not_exists(inp_dir)
     create_directory_if_not_exists(annotated_vcf_dir)
-    #create_directory_if_not_exists(out_dir)
-    #create_directory_if_not_exists(out_compound_path)
     create_directory_if_not_exists(ref_dir)
 
 # 2. Reference Genome Downloading
