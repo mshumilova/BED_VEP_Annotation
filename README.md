@@ -35,5 +35,5 @@ If your file format is .bed, it will be converted to .vcf format using PLINK and
 If your file format is .vcf, it will be copied to "inp_dir" right away.
 _____________________________________________________________________________________________
 #### Step 6. VEP Annotation 
-VEP annotation will be performed based on the genome assembly (37 or 38) was indicated in "config" file and the following plugins:
+VEP annotation will be performed based on the genome assembly (37 or 38) indicated in "config" file and the following plugins:
 GnomAD Exomes, GnomAD Genomes, CADD Whole Genome and ClinVar.
